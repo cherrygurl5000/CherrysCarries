@@ -64,13 +64,13 @@ SERVICES
 ____________________________________________________________________________________________________________
 ABOUT
 
--Add logo and menu items to the navBar
-    -Add links to each item
++-Add logo and menu items to the navBar
++    -Add links to each item
 -Add About images and extended description
 -Add services button with link to services page
--Add quote button with link to home and direct to quote form
--Add company info box
-    -Logo that links back to the top of the page
++-Add quote button with link to home and direct to quote form
++-Add company info box
++    -Logo that links back to the top of the page
     -Direct Dial phone number
     -Add Facebook, IG, and Yelp links
--Copyright information
++-Copyright information

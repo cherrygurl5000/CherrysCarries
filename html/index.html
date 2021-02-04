@@ -12,6 +12,13 @@
     <!--Stylesheets including Bootstrap and page-specific styling-->
     <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
     <link href="../css/styles.css" type="text/css" rel="stylesheet" />
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital@1&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div class="jumbotron pb-0">
@@ -62,14 +69,17 @@
                     <div class="carousel-inner">
                       <div class="carousel-item active" data-toggle="modal" data-target="#scModal">
                           <h2>Service Centers</h2>
+                          <p>*Click image for more information*</p>
                         <img class="d-block w-100 rounded-circle mx-auto" src="../img/carLoad.jpg" alt="Service Center Slide">
                       </div>
                       <div class="carousel-item" data-toggle="modal" data-target="#rModal">
                           <h2>Racing</h2>
+                          <p>*Click image for more information*</p>
                         <img class="d-block w-100 rounded-circle mx-auto" src="../img/muscleLogo2.png" alt="Racing Slide">
                       </div>
                       <div class="carousel-item" data-toggle="modal" data-target="#mModal">
                           <h2>Moving</h2>
+                          <p>*Click image for more information*</p>
                         <img class="d-block w-100 rounded-circle mx-auto" src="../img/truckLogo2.png" alt="Moving Slide">
                       </div>
                     </div>
@@ -186,7 +196,7 @@
                     <div class="row justify-content-center">
                         <h2 class="col-12 mt-4 pb-2">When do you want it there?</h2>
                         <label for="delivery" class="pr-2">Delivery Date: </label>
-                        <input type="calendar" id="delivery" name="delivery" value="mm/dd/yyyy" class="text-center" />
+                        <input type="date" id="delivery" name="delivery" value="mm/dd/yyyy" class="text-center" />
                     </div>
                 </fieldset>
                 <fieldset id="contactInfo">
@@ -211,18 +221,22 @@
 
         <div class="row justify-content-center pt-4 infoBox">
             <a href="#" class="col-12 text-center mt-4 mb-5"><img src="../img/truckLogo2.png" alt="Logo" class="img-fluid mx-auto rounded infoLogo" /> </a>
+            
+            <!--Embedded Google Map for the service area-->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3340381.762553641!2d-82.10398507474933!3d35.15433710145509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88541fc4fc381a81%3A0xad3f30f5e922ae19!2sNorth%20Carolina!5e0!3m2!1sen!2sus!4v1612206581162!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="mb-5 rounded"></iframe>
+
             <h3 class="col-12 text-center mb-3">Hauling up and down the East Coast!</h3>
             <div class="col-12 text-center mb-3">
                 <h3 class="col-12 text-center">Charlotte, NC</h3>
                 <p class="col-12 text-center">Mon-Sun: 10am - 10pm</p>
             </div>
-            <button type="button" class="btn btn-info mb-3 mt-1 contactBtn" >Get a Quote!</button>
+            <a href="#quoteForm" class="btn btn-info mb-3 mt-1 contactBtn" >Get a Quote!</a>
             <div class="col-12 my-3 text-center social">
                 <!--Link to Facebook page-->
                 <a target="_blank" href="https://www.facebook.com/CherrysCarries/">
                     <img src="../img/fb.svg" alt="Facebook Link" /></a>
                 <!--Link to Yelp reviews-->
-                <a target="_blank" href="https://www.yelp.com/biz/creme-de-la-creme-auto-spa-austin">
+                <a target="_blank" href="https://www.yelp.com/biz/cherrys-carries-transport-charlotte">
                     <img src="../img/yelp.svg" alt="Yelp Link" /></a>
                 <!--Link to Instagram page-->
                 <a target="_blank" href="https://www.instagram.com/cherryscarries/">
@@ -231,7 +245,7 @@
                 <!--End of social div-->
             </div>
             <div class="col-12 text-center copyright">
-                <p> Copyright &#169; 2021 Cherry's Carries Transport <br />
+                <p> Copyright &#169; <script>document.write(new Date().getFullYear())</script> Cherry's Carries Transport <br />
                     All rights reserved.
                 </p>
             </div>

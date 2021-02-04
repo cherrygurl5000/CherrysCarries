@@ -7,8 +7,17 @@ body {
   background-attachment: fixed;
 }
 
+body h1, body h2, body h3 {
+  font-family: 'Orbitron', sans-serif;
+}
+
 a {
   color: #ff6666;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+p, label, input {
+  font-family: 'Montserrat Alternates', sans-serif;
 }
 
 .jumbotron {
@@ -66,6 +75,30 @@ a {
   text-shadow: 2px 1px #660000;
 }
 
+.services p {
+  color: #660000;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-weight: 550;
+  padding: 3px 5px 3px 3px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.services .modal-content {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.services .modal-header {
+  border: none;
+  text-shadow: 2px 1px #660000;
+  background-color: rgba(128, 128, 128, 0.9);
+}
+
+.services .modal-body p {
+  color: white;
+}
+
 .social img {
   width: 50%;
   height: auto;
@@ -103,7 +136,7 @@ a {
   border: darkslateblue 3px outset;
 }
 
-#quoteForm input[type=text], #quoteForm input[type=email], #quoteForm input[type=tel], #quoteForm input[type=calendar] {
+#quoteForm input[type=text], #quoteForm input[type=email], #quoteForm input[type=tel], #quoteForm input[type=date] {
   background-color: rgba(128, 128, 128, 0.9);
   color: #660000;
   font-weight: bold;
